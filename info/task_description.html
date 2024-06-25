@@ -47,18 +47,18 @@ adam = Vampire()
 richard = Defender()
 ogre = Warrior()
 
-fight(chuck, bruce) == True
-fight(dave, carl) == False
-chuck.is_alive == True
-bruce.is_alive == False
-carl.is_alive == True
-dave.is_alive == False
-fight(carl, mark) == False
-carl.is_alive == False
-fight(bob, mike) == False
-fight(lancelot, rog) == True
-fight(eric, richard) == False
-fight(ogre, adam) == True
+assert fight(chuck, bruce) == True
+assert fight(dave, carl) == False
+assert chuck.is_alive == True
+assert bruce.is_alive == False
+assert carl.is_alive == True
+assert dave.is_alive == False
+assert fight(carl, mark) == False
+assert carl.is_alive == False
+assert fight(bob, mike) == False
+assert fight(lancelot, rog) == True
+assert fight(eric, richard) == False
+assert fight(ogre, adam) == True
 
 my_army = Army()
 my_army.add_units(Defender, 2)
@@ -80,8 +80,8 @@ army_4.add_units(Warrior, 2)
 
 battle = Battle()
 
-battle.fight(my_army, enemy_army) == False
-battle.fight(army_3, army_4) == True
+assert battle.fight(my_army, enemy_army) == False
+assert battle.fight(army_3, army_4) == True
 </pre>
 </p>
 </div>
